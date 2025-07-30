@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  content : "";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    
+}
+
+main {
+    .form-wrapper {  
+       min-width: 100vw;
+       min-height: 100vh;
+
+            @media  (min-width:1025px) {
+                display: flex;
+                justify-content: center;
+                padding: 5rem;
+                background-color: #eee;
+                    
+            }
+
+        .form-header {
+            padding: 3.5rem;
+            background: linear-gradient(45deg, rgb(76,107,254), rgb(171,164,249), rgb(243,207,245));
+            color: #fff;
+            position: relative;
+            
+
+                @media (min-width:1025px) {
+                    display: flex;
+                    flex-flow: column ;
+                    justify-content: center;
+                    flex-grow: 1;
+                    max-width: 500px;
+                    border: 1.5px solid #ccc;
+                    border-radius: 6px 0 0 6px ;
+                }
+             
+
+
+                .logo {
+                    width: 35px;
+                    transform: translate( -2rem, -2.5rem);
+                        @media (min-width:1025px) {
+                            position: absolute;
+                            top: 3.5rem;
+                        }
+                }
+
+                h1 {
+                    max-width: 10ch;
+                    font-size: 2.5rem ;
+                        @media (min-width:450px) {
+                            max-width: 30ch;
+                            font-size: 3rem;
+                        }
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                        @media (min-width:450px) {
+                            font-size: 1.55rem;
+                            line-height: 1.5;
+                           
+                        }
+                }
+        }
+
+        .form-body {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            padding: 5rem 3.5rem;
+            gap: 1rem;
+            background-color: rgb(240,232,229);
+            min-height: 100vh;
+            border-radius: 0 6px 6px 0 ;
+
+                @media (min-width:1025px) {
+                    min-height: 50vh;
+                    justify-content: center;
+                    flex-grow: 1;
+                    max-width: 300px;
+                    border: 1.5px solid #ccc;
+                }
+        
+
+                h1 {
+                    margin-bottom: 3.5rem;
+                    font-size: 3rem;
+                }
+
+                form {
+                    
+                align-items: center;
+                display: flex;
+                flex-flow: column nowrap;
+                    
+                    input {
+
+                        margin-bottom: 1.5rem;
+                        border-radius: 30px;
+                        border: none;
+                        outline: none;
+                        background-color:rgb(218,218,218);
+                        padding: 1.5rem;
+                        min-width: 200px;
+                        max-width: 280px;
+                        width: 50%;
+
+                    }
+
+                    input::placeholder {
+                        font-size: 1.15rem;
+                        font-weight: bolder;
+                        
+                    }
+
+                    button {
+                        border: none;
+                        outline: none;
+                        background-color: rgb(73,101,248);
+                        padding: 1rem;
+                        text-align: center;
+                        color: #fff;
+                        border-radius: 20px;
+                        margin-top: 5rem;
+                        width: 150px;
+
+                    }
+           }
+
+        }
+    }
+}
